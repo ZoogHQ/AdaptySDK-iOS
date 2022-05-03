@@ -37,7 +37,7 @@ public class PaywallModel: NSObject, JSONCodable, Codable {
     @objc public var abTestName: String?
     @objc public var name: String?
     
-    required init?(json: Parameters) throws {
+    public required init?(json: Parameters) throws {
         let attributes: Parameters?
         do {
             attributes = try json.attributes()
